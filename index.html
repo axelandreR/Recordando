@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Source+Code+Pro:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Recordando...</title>
 </head>
 <body>
-    <h1>Ingresos de mercadería</h1>
-    <form action="">
-        <h3>Unidad de conversión</h3>
-        <input type="radio" id="Docenas" name="unidadMedida">
-        <label for="Docenas">Docenas</label>
-        <input type="radio" id="Unidades" name="unidadMedida">
-        <label for="Unidades">Unidades</label>
+    <h1 class="centrar">Ingresos de mercadería</h1>
+    <form action="" method="POST" id="form" class="formulario contenedor" onsubmit="return false;">
+        <div class="ingresarDatos">
+            <h3>Unidad de conversión</h3>
+            <input type="radio" id="Docenas" value="Docenas" name="unidadMedida"> Docenas
+            
+            <input type="radio" id="Unidades" value="Unidades" name="unidadMedida"> Unidades
 
+            <h4>Ingrese cantidad:</h4>
+            
+            <label for="IngresarDocenas">Docenas</label>
+            <input type="text" placeholder="Docenas">
+
+            <label for="IngresarUnidades">Unidades</label>
+            <input type="text" placeholder="Unidades">
+        </div>
+
+        <div class="button">
+            <input type="submit" value="Convertir">
+        </div>
     </form>
     <script src="JS/script.js"></script>
 </body>

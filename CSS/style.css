@@ -1,0 +1,50 @@
+:root{
+    /* Fuente de texto */
+    --fuente-principal: 'Josefin Sans', sans-serif;
+    /* Colors */
+    --first-color: #FFFB9F;
+    --title-color: #FFFDBD;
+    --font-color: #477A9E;
+}
+
+/* Globales */
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    min-height: 100%;
+    background-color: white;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Formulario */
+.formulario{
+    max-height: 40vh;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.centrar{
+    text-align: center;
+}
+.ingresarDatos{
+
+}
+
+.button{
+    text-align: center;
+    margin: 1.5rem 0;
+}
